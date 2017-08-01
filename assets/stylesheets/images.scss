@@ -1,0 +1,29 @@
+.gym-bench {
+  width: 400px;
+  height: 172px;
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  background: url('https://res.cloudinary.com/malice/image/upload/v1501606406/gymbench_ummfad.png') no-repeat center center;
+  background-size: 400px;
+}
+
+dumbell {
+  width: 95px;
+  height: 40px;
+  position: absolute;
+  top: -30px;
+  left: 55%;
+  background: url('https://image.flaticon.com/icons/svg/458/458991.svg') no-repeat center center;
+  background-size: 80px;
+  cursor: pointer;
+}
+
+dumbell:hover {
+  background: url('https://res.cloudinary.com/malice/image/upload/v1501614674/dumbell-hover_xx1elr.png') no-repeat center center;
+  background-size: 95px;
+}
+
+.gym-bench dumbell:first-of-type {
+  left: 25%;
+}

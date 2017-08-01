@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CSS Gym</title>
     <link rel="stylesheet" href="assets/stylesheets/reset.scss">
     <link rel="stylesheet" href="assets/stylesheets/style.scss">
+    <link rel="stylesheet" href="assets/stylesheets/images.scss">
   </head>
   <body>
     <main id="main">
@@ -13,7 +14,7 @@
         <section id="level-description"></section>
       </aside>
       <article id="selector-display">
-        <h1>CSS Selectors</h1>
+        <h1>CSS Gym</h1>
         <section id="selector-title">
           Select the blah
         </section>
@@ -21,7 +22,10 @@
           Hint
         </section>
         <section id="selector-images">
-          Images
+          <div class="gym-bench">
+            <dumbell></dumbell>
+            <dumbell></dumbell>
+          </div>
         </section>
         <section id="editors-container">
           <header id="editor-headers">
@@ -46,11 +50,31 @@
             <ul class="text-editor-lines">
               <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
             </ul>
-            <textarea id="css-editor"></textarea>
+            <div id="css-editor">
+              <textarea disabled>{
+/* Styles would go here. */
+}
+
+/*
+Type a number to skip to a level.
+Ex → "5" for level 5
+*/
+              </textarea>
+            </div>
+            <input
+              type="text"
+              placeholder="Type in a CSS selector"
+              id="css-input">
+            </input>
+            <button
+              id="enter-button">
+              enter
+            </button>
             <ul class="text-editor-lines">
               <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
             </ul>
-            <textarea id="html-viewer"></textarea>
+            <textarea readonly id="html-viewer">
+            </textarea>
           </section>
         </section>
       </article>
