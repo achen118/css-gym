@@ -9,12 +9,8 @@
   <body>
     <main id="main">
       <aside id="sidebar">
-        <nav id="level">
-          Level 1
-        </nav>
-        <section id="level-description">
-          Description
-        </section>
+        <nav id="level"></nav>
+        <section id="level-description"></section>
       </aside>
       <article id="selector-display">
         <h1>CSS Selectors</h1>
@@ -27,29 +23,38 @@
         <section id="selector-images">
           Images
         </section>
-        <header id="editor-headers">
-          <ul class="editor-header">
-            <li>
-              CSS Editor
-            </li>
-            <li>
-              style.css
-            </li>
-          </ul>
-          <ul class="editor-header">
-            <li>
-              HTML Viewer
-            </li>
-            <li>
-              table.html
-            </li>
-          </ul>
-        </header>
-        <section id="editors">
+        <section id="editors-container">
+          <header id="editor-headers">
+            <ul class="editor-header">
+              <li>
+                CSS Editor
+              </li>
+              <li>
+                style.css
+              </li>
+            </ul>
+            <ul class="editor-header">
+              <li>
+                HTML Viewer
+              </li>
+              <li>
+                table.html
+              </li>
+            </ul>
+          </header>
+          <section id="editors">
+            <ul class="text-editor-lines">
+              <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
+            </ul>
             <textarea id="css-editor"></textarea>
+            <ul class="text-editor-lines">
+              <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
+            </ul>
             <textarea id="html-viewer"></textarea>
+          </section>
         </section>
       </article>
     </main>
+    <script type="text/javascript" src="lib/bundle.js"></script>
   </body>
 </html>

@@ -42,6 +42,16 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: 1px solid blue;
+  box-sizing: border-box;
+}
+
+#editors-container {
+  background-color: gray;
+  margin: 0 auto;
+  border: 10px solid black;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 .editor-header {
@@ -49,16 +59,8 @@ h1 {
   justify-content: space-between;
   align-items: center;
   font-family: monospace;
-  margin-top: 30px;
-}
-
-.editor-header:first-of-type {
-  padding-right: 10px;
-  box-sizing: border-box;
-}
-
-.editor-header:last-of-type {
-  padding-left: 10px;
+  margin: 10px 0;
+  padding: 0 10px;
   box-sizing: border-box;
 }
 
@@ -72,6 +74,19 @@ h1 {
   width: 350px;
 }
 
-#css-editor, #html-viewer {
+#css-editor, #html-viewer, .text-editor-lines {
   height: 350px;
+  outline: 1px solid blue;
+}
+
+.text-editor-lines {
+  width: 30px;
+  background-color: pink;
+  font-family: monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 10px 8px 10px 0;
+  box-sizing: border-box;
 }
