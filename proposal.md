@@ -25,7 +25,7 @@ CSS Selectors will be a single page application that will render the main elemen
 
 ### Implementation Timeline
 **Day 1:** Set up all necessary node modules, webpack, entry file, and index.html. Build the bare bones for all of the elements so that they render in the browser.<br />
-**Day 2:** Start building out all of the levels with descriptions in the sidebar and implement the CSS editor and HTML viewer. Push to different URL if level is changed. <br />
+**Day 2:** Start building out all of the levels with descriptions in the sidebar and implement the CSS editor and HTML viewer<br />
 **Day 3:** Add all of the event listeners and CSS animations to selector elements.<br />
 **Day 4:** Implement hints for each level. Finish styling and polish the frontend.
 
