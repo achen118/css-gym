@@ -4,7 +4,6 @@
   animation-delay: 0s, .5s;
 }
 
-
 @keyframes startStrobe {
   0% {
     transform: skew(0deg,0deg) scaleY(1);
@@ -18,7 +17,6 @@
     transform: skew(4deg,0deg) scaleX(1);
   }
 }
-
 
 @keyframes strobe {
   0% {
@@ -35,5 +33,27 @@
   }
   100% {
     transform: skew(4deg,0deg) scaleX(1);
+  }
+}
+
+.shake {
+  animation: shake .1s 5;
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  25% {  transform: translateX(-5px); }
+  50% {  transform: translateX(0); }
+  75% {  transform: translateX(5px); }
+}
+
+.pressEnter {
+  animation: pressEnter .1s 1;
+}
+
+@keyframes pressEnter {
+  50% {
+    border-width: 1px 1px 2px 1px;
+    top: 10px;
   }
 }
