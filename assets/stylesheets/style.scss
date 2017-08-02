@@ -80,23 +80,25 @@ code {
 h1 {
   font-weight: bold;
   font-size: 28px;
-  margin-bottom: 30px;
 }
 
 #selector-title {
   font-size: 20px;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
-#selector-images {
+#selector-images-container {
   margin: 30px;
-  background-color: #FF6F00;
-  outline: 2px solid gray;
-  height: 300px;
-  border-bottom: 120px solid gray;
+  background-color: #FE9834;
+  border-bottom: 100px solid gray;
   width: 780px;
   box-sizing: border-box;
   position: relative;
+  display: inline-block;
+}
+
+#selector-images {
+  height: 280px;
 }
 
 #level {

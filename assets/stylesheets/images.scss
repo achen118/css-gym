@@ -1,20 +1,21 @@
 .gym-bench {
   width: 400px;
   height: 172px;
-  margin: 100px auto 0 auto;
   background: url('https://res.cloudinary.com/malice/image/upload/v1501606406/gymbench_ummfad.png') no-repeat center center;
   background-size: 400px;
+  position: absolute;
+  bottom: -60px;
+  left: 25%;
 }
 
 dumbbell {
   width: 100px;
   height: 40px;
-  position: absolute;
-  top: 38%;
-  left: 52%;
   background: url('https://image.flaticon.com/icons/svg/458/458991.svg') no-repeat center center;
   background-size: 80px;
   cursor: pointer;
+  position: absolute;
+  top: -10px;
 }
 
 dumbbell:hover {
@@ -23,5 +24,5 @@ dumbbell:hover {
 }
 
 .gym-bench dumbbell:first-of-type {
-  left: 35%;
+  left: 25%;
 }
