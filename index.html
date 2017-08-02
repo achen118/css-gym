@@ -9,78 +9,75 @@
     <link rel="stylesheet" href="assets/stylesheets/animations.scss">
   </head>
   <body>
+    <aside id="sidebar">
+      <h1>CSS Gym</h1>
+      <nav id="level"></nav>
+      <section id="level-description"></section>
+    </aside>
     <main id="main">
-      <aside id="sidebar">
-        <nav id="level"></nav>
-        <section id="level-description"></section>
-      </aside>
-      <article id="selector-display">
-        <h1>CSS Gym</h1>
-        <section id="selector-images-container">
-          <div id="selector-images">
-            <section id="selector-title">
-              Select the blah
-            </section>
-            <section id="hint">
-              Hint
-            </section>
-            <div class="gym-bench">
-              <dumbbell></dumbbell>
-              <dumbbell></dumbbell>
-            </div>
-          </div>
+      <header id="instructions">
+        <section id="selector-title">
+          Select the blah
         </section>
-        <section id="editors-container">
-          <header id="editor-headers">
-            <ul class="editor-header">
-              <li>
-                CSS Editor
-              </li>
-              <li>
-                style.css
-              </li>
-            </ul>
-            <ul class="editor-header">
-              <li>
-                HTML Viewer
-              </li>
-              <li>
-                table.html
-              </li>
-            </ul>
-          </header>
-          <section id="editors">
-            <ul class="text-editor-lines">
-              <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
-            </ul>
-            <div id="css-editor">
-              <textarea readonly>{
-/* Styles would go here. */
-}
-
-/*
-Type a number to skip to a level.
-Ex → "5" for level 5
-*/
-              </textarea>
-            </div>
-            <input
-              type="text"
-              placeholder="Type in a CSS selector"
-              id="css-input">
-            </input>
-            <button
-              id="enter-button">
-              enter
-            </button>
-            <ul class="text-editor-lines">
-              <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
-            </ul>
-            <textarea readonly id="html-viewer">
-            </textarea>
-          </section>
+        <section id="hint">
+          Hint
+        </section>
+      </header>
+      <article id="selector-display">
+        <section class="gym-bench">
+          <dumbbell></dumbbell>
+          <dumbbell></dumbbell>
         </section>
       </article>
+      <section id="editors-container">
+        <header id="editor-headers">
+          <ul class="editor-header">
+            <li>
+              CSS Editor
+            </li>
+            <li>
+              style.css
+            </li>
+          </ul>
+          <ul class="editor-header">
+            <li>
+              HTML Viewer
+            </li>
+            <li>
+              table.html
+            </li>
+          </ul>
+        </header>
+        <section id="editors">
+          <ul class="text-editor-lines">
+            <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
+          </ul>
+          <div id="css-editor">
+            <textarea readonly>{
+              /* Styles would go here. */
+            }
+
+            /*
+            Type a number to skip to a level.
+            Ex → "5" for level 5
+            */
+          </textarea>
+        </div>
+        <input
+        type="text"
+        placeholder="Type in a CSS selector"
+        id="css-input">
+        </input>
+        <button
+          id="enter-button">
+          enter
+        </button>
+        <ul class="text-editor-lines">
+          <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
+        </ul>
+        <textarea readonly id="html-viewer"></textarea>
+        </section>
+      </section>
     </main>
     <script type="text/javascript" src="lib/bundle.js"></script>
   </body>
