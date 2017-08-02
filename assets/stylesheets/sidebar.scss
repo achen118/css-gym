@@ -2,8 +2,8 @@
   cursor: pointer;
 }
 
-.fa-arrow-circle-right, .fa-arrow-circle-left {
-  margin-left: 20px;
+.fa-arrow-circle-left {
+  margin-right: 20px;
 }
 
 .disabled {
@@ -27,6 +27,7 @@ h1 {
   background-color: #40bc6c;
   font-family: 'Bungee', cursive;
   letter-spacing: 2px;
+  flex-wrap: wrap;
 }
 
 #sidebar-header {
@@ -38,12 +39,19 @@ h1 {
 #level-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 #level {
   font-size: 20px;
   font-weight: bold;
+}
+
+#level-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #level-description {
