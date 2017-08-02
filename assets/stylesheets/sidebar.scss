@@ -1,0 +1,55 @@
+.fa {
+  cursor: pointer;
+}
+
+.fa-arrow-circle-right, .fa-arrow-circle-left {
+  margin-left: 20px;
+}
+
+.disabled {
+  cursor: default;
+}
+
+#sidebar {
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+}
+
+#instructions {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+#sidebar-header, #level-nav {
+  padding: 15px;
+  background-color: #40bc6c;
+}
+
+#sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#selector-title {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+#level-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#level {
+  font-size: 20px;
+  font-weight: bold;
+}
