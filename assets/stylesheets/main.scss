@@ -82,6 +82,7 @@ body code {
 #instructions {
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 #selector-title {
@@ -90,4 +91,70 @@ body code {
   font-family: 'Bungee', cursive;
   color: #40BC6C;
   letter-spacing: 2px;
+}
+//
+// .modal {
+//   position: relative;
+//   background: #fff;
+//   border: 1px solid #e0e0e0;
+//   color: #333;
+//   text-align: center;
+//   width: 60%;
+//   margin: 0 auto;
+//   min-height: 5em;
+//   min-width: 15em;
+//   box-shadow: -0.3em 0.3em 0.5em rgba(0,0,0,0.2);
+// }
+
+
+.ribbon{
+  position: absolute;
+  top: 30px;
+  right: 1em;
+  z-index: 1;
+  color: #eee;
+  font-size: 1.5em;
+  cursor: pointer;
+  width: 1.5em;
+  line-height: 0.5em;
+  -webkit-transition: line-height 0.5s;
+  transition: line-height 0.5s;
+}
+.ribbon:after {
+  content: "";
+  font-size: 0.5em;
+  position: absolute;
+  height: 1.2em;
+  border: 1.5em solid #F44336;
+  z-index: -1;
+  top: -1em;
+  border-top-width: 1.5em;
+  border-bottom-color: transparent;
+  right: 0;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.ribbon:before {
+  content: "";
+  font-size: 0.5em;
+  position: absolute;
+  border-style: solid;
+  border-color: transparent transparent #B71C1C transparent;
+  top: -1em;
+  right: 3em;
+  border-width: 0 0 1em 0.7em;
+  z-index: -1;
+}
+.ribbon:hover:after{
+  border: 1.5em solid #EF5350;
+  border-bottom-color: transparent;
+  height: 1.6em;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+.ribbon:hover{
+  line-height: 0.9em;
+  color: #333;
+  -webkit-transition: line-height 0.5s;
+  transition: line-height 0.5s;
 }
