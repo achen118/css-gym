@@ -6,6 +6,20 @@ i {
   font-style: italic;
 }
 
+input:focus, button:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input {
+  background-color: #EFEFEF;
+  border: none;
+  font-family: monospace;
+  font-size: inherit;
+}
+
 pre {
     font-family: monospace;
     font-size: 85%;
@@ -37,6 +51,7 @@ code {
   width: 100%;
   height: 100vh;
   display: flex;
+  justify-content: space-between;
   font-size: 11px;
   font-family: sans-serif;
 }
@@ -45,6 +60,8 @@ code {
   width: 20%;
   height: 100%;
   background-color: gray;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #selector-display {
@@ -57,6 +74,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -72,7 +90,7 @@ h1 {
 
 #selector-images {
   margin: 30px;
-  background-color: teal;
+  background-color: #FF6F00;
   outline: 2px solid gray;
   height: 300px;
   border-bottom: 120px solid gray;
@@ -84,10 +102,6 @@ h1 {
 #level {
   font-size: 20px;
   font-weight: bold;
-}
-
-#level, #level-description {
-  margin: 20px;
 }
 
 #editor-headers {
@@ -133,7 +147,6 @@ h1 {
 
 .text-editor-lines {
   width: 30px;
-  background-color: gray;
   font-family: monospace;
   display: flex;
   justify-content: space-between;
@@ -143,12 +156,20 @@ h1 {
   box-sizing: border-box;
 }
 
+.text-editor-lines:first-of-type {
+  background-color: #DDDDDD;
+}
+
 #css-input {
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: 35px;
   width: 37%;
-  height: 11px;
+  height: 13px;
+}
+
+.input-flash {
+  background-color: #FFA35C;
 }
 
 #enter-button {
@@ -160,7 +181,7 @@ h1 {
   border-width: 1px 1px 4px 4px;
   border-radius: 2px;
   font-size: 9px;
-  top: 5px;
+  top: 6px;
   left: 43%;
 }
 
@@ -171,6 +192,7 @@ h1 {
   box-sizing: border-box;
   font-family: monospace;
   line-height: 1.6em;
+  background-color: #EFEFEF;
 }
 
 #html-viewer {
