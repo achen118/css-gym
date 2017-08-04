@@ -22,6 +22,10 @@ h1 {
   font-size: 28px;
 }
 
+#sidebar-header {
+  position: relative;
+}
+
 #sidebar-header, #level-nav {
   padding: 15px;
   background-color: #40bc6c;
@@ -56,4 +60,17 @@ h1 {
 
 #level-description {
   padding: 15px;
+}
+
+.level-dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.show {
+  display: block;
 }
