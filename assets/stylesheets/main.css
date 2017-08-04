@@ -18,6 +18,17 @@ i {
   font-style: italic;
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 input:focus, button:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
