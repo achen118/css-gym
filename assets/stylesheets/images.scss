@@ -18,9 +18,17 @@ dumbbell {
 
 dumbbell:hover {
   background: url('https://res.cloudinary.com/malice/image/upload/v1501614674/dumbell-hover_xx1elr.png') no-repeat center center;
-  background-size: 160px;
+  background-size: 166px;
 }
 
 .gym-bench dumbbell:first-of-type {
   left: 25%;
+}
+
+.small {
+  background-size: 100px;
+}
+
+.small:hover {
+  background-size: 120px;
 }
