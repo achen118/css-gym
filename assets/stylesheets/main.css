@@ -8,6 +8,7 @@ body {
   font-size: 11px;
   font-family: sans-serif;
   color: #1C1F1E;
+  position: relative;
 }
 
 a, button {
@@ -81,7 +82,7 @@ body code {
 
 #selector-display {
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 70px;
   text-align: center;
   overflow: auto;
   display: flex;
@@ -103,4 +104,37 @@ body code {
   font-family: 'Bungee', cursive;
   color: #40BC6C;
   letter-spacing: 2px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+mark {
+  background-color: #40BC6C;
+  padding: 10px 20px;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  font-size: 14px;
+  top: 90px;
+}
+
+.left {
+  left: 23%;
+}
+
+.right {
+  right: 23%;
+}
+
+.fa-github, .fa-linkedin-square {
+  color: #1C1F1E;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fa-github {
+  margin-right: 50px;
 }
