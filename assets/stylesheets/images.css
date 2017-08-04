@@ -16,7 +16,7 @@ dumbbell {
   right: 25%;
 }
 
-dumbbell:hover {
+.dumbell-hover:hover {
   background: url('https://res.cloudinary.com/malice/image/upload/v1501614674/dumbell-hover_xx1elr.png') no-repeat center center;
   background-size: 166px;
 }
