@@ -3,7 +3,6 @@
   height: 190px;
   background: url('https://res.cloudinary.com/malice/image/upload/v1501649999/bench_umaiut.png') no-repeat center center;
   background-size: 600px;
-  position: relative;
 }
 
 dumbbell {
@@ -13,8 +12,8 @@ dumbbell {
   background-size: 140px;
   cursor: pointer;
   position: absolute;
-  top: -45px;
-  right: 18%;
+  top: 95px;
+  right: 25%;
 }
 
 dumbbell:hover {
@@ -23,5 +22,5 @@ dumbbell:hover {
 }
 
 .gym-bench dumbbell:first-of-type {
-  left: 18%;
+  left: 25%;
 }
