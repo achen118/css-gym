@@ -13,11 +13,10 @@
 .sidebar {
   width: 20%;
   height: 100%;
-  box-sizing: border-box;
   background-color: #FAFAFA;
   border-left: 5px solid #40bc6c;
   border-right: 5px solid #40bc6c;
-  position: fixed;
+  box-sizing: border-box;
 }
 
 h1 {
