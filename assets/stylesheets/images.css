@@ -3,24 +3,24 @@
   height: 190px;
   background: url('https://res.cloudinary.com/malice/image/upload/v1501649999/bench_umaiut.png') no-repeat center center;
   background-size: 600px;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 
 dumbbell {
-  width: 160px;
-  height: 90px;
-  background: url('https://image.flaticon.com/icons/svg/458/458991.svg') no-repeat center center;
+  width: 140px;
+  height: 69px;
+  background: url('http://res.cloudinary.com/malice/image/upload/v1501906540/dumbbell_i0nx4n.png') no-repeat center center;
   background-size: 140px;
   cursor: pointer;
   position: absolute;
-  top: 125px;
+  top: 195px;
   right: 25%;
 }
 
-.dumbell-hover:hover {
+/*.dumbell-hover:hover {
   background: url('https://res.cloudinary.com/malice/image/upload/v1501614674/dumbell-hover_xx1elr.png') no-repeat center center;
   background-size: 166px;
-}
+}*/
 
 dumbbell:first-of-type {
   left: 25%;
@@ -31,7 +31,7 @@ dumbbell:first-of-type.move-left {
 }
 
 dumbbell:last-of-type.move-left {
-  right: 33%;
+  right: 37%;
 }
 
 #orange {
@@ -44,13 +44,15 @@ dumbbell:last-of-type.move-left {
 }
 
 .small {
+  width: 100px;
+  height: 49px;
   background-size: 100px;
-  top: 132px;
+  top: 215px;
 }
 
-.small:hover {
+/*.small:hover {
   background-size: 120px;
-}
+}*/
 
 kettlebell {
   background: url('https://res.cloudinary.com/malice/image/upload/v1501898842/kettlebells_ri14jr.png') no-repeat center center;
@@ -58,13 +60,13 @@ kettlebell {
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 120px;
+  top: 185px;
   right: 25%;
   cursor: pointer;
 }
 
 kettlebell:first-of-type {
-  left: 38%;
+  left: 36%;
 }
 
 kettlebell:last-of-type {
@@ -73,5 +75,16 @@ kettlebell:last-of-type {
 
 step {
   background: url('https://res.cloudinary.com/malice/image/upload/v1501898607/step_yae774.png') no-repeat center center;
-  background-size: 200px;
+  background-size: 100px;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 230px;
+  right: 20%;
+  cursor: pointer;
+}
+
+step > kettlebell:first-of-type {
+  top: -75px;
+  left: 9px;
 }

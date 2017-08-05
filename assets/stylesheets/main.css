@@ -82,7 +82,7 @@ body code {
 
 .selector-display {
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 100px;
   text-align: center;
   overflow: auto;
   display: flex;
@@ -122,7 +122,7 @@ mark {
   position: absolute;
   z-index: 1000;
   font-size: 14px;
-  top: 90px;
+  top: 120px;
 }
 
 .fa-github, .fa-linkedin-square {

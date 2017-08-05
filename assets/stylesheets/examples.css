@@ -1,0 +1,21 @@
+span1 {
+  background-color: DodgerBlue;
+  color: #ffffff;
+}
+
+span#identified {
+  background-color: DodgerBlue;
+}
+
+span.classy {
+  background-color: DodgerBlue;
+}
+
+li4:first-of-type + li4 {
+  color: red;
+}
+
+span5 { background-color: white; }
+div > span5 {
+  background-color: DodgerBlue;
+}
