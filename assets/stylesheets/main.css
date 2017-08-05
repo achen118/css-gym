@@ -135,13 +135,37 @@ body code {
 }
 
 mark {
-  background-color: #40BC6C;
-  padding: 10px 20px;
+  /*background-color: #40BC6C;*/
+  background-color: transparent;
+  padding: 10px 30px;
   visibility: hidden;
   position: absolute;
   z-index: 1000;
   font-size: 14px;
+  font-weight: bold;
   top: 120px;
+}
+
+mark.visible {
+  -webkit-animation: fadein .7s;
+  -moz-animation: fadein .7s;
+  -ms-animation: fadein .7s;
+  -o-animation: fadein .7s;
+  animation: fadein .7s;
+}
+
+mark::before {
+  content: url('https://res.cloudinary.com/malice/image/upload/c_scale,w_20/v1501922690/barbell-left_kpslry.png');
+  position: absolute;
+  top: 6px;
+  left: 7px;
+}
+
+mark::after {
+  content: url('https://res.cloudinary.com/malice/image/upload/c_scale,w_20/v1501922690/barbell-right_olhegk.png');
+  position: absolute;
+  top: 6px;
+  right: 7px;
 }
 
 .fa-github, .fa-linkedin-square {
