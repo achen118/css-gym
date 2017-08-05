@@ -18,8 +18,8 @@
       target="_blank">
       <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
     </a>
-    <aside id="sidebar">
-      <header id="sidebar-header">
+    <aside class="sidebar">
+      <header class="sidebar-header">
         <h1>CSS Gym</h1>
         <i
           class="fa fa-bars fa-3x"
@@ -42,9 +42,9 @@
           </li>
         </ul>
       </header>
-      <nav id="level-nav">
-        <section id="level"></section>
-        <section id="level-arrows">
+      <nav class="level-nav">
+        <section class="level"></section>
+        <section class="level-arrows">
           <i
             class="fa fa-arrow-circle-left fa-2x"
             aria-hidden="true"></i>
@@ -53,20 +53,21 @@
             aria-hidden="true"></i>
         </section>
       </nav>
-      <section id="level-description"></section>
+      <section class="level-description"></section>
     </aside>
-    <main id="main">
-      <header id="instructions">
-        <section id="selector-title"></section>
+    <main class="main">
+      <header class="instructions">
+        <section class="selector-title"></section>
       </header>
-      <article id="selector-display">
+      <article class="selector-display">
         <mark name="dumbbell">&#60;dumbbell>&#60;/dumbbell></mark>
-        <mark name="orange">&#60;dumbbell id="orange">&#60;/dumbbell></mark>
+        <mark name="orange">&#60;dumbbell class="orange">&#60;/dumbbell></mark>
         <mark name="small">&#60;dumbbell class="small">&#60;/dumbbell></mark>
+        <mark name="kettlebell">&#60;kettlebell>&#60;/kettlebell></mark>
         <section class="gym-bench"></section>
       </article>
-      <section id="editors-container">
-        <header id="editor-headers">
+      <section class="editors-container">
+        <header class="editor-headers">
           <ul class="editor-header">
             <li>
               CSS Editor
@@ -84,11 +85,11 @@
             </li>
           </ul>
         </header>
-        <section id="editors">
+        <section class="editors">
           <ul class="text-editor-lines">
             <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
           </ul>
-          <div id="css-editor">
+          <div class="css-editor">
             <textarea readonly>{
 /* Styles would go here. */
 }
@@ -102,16 +103,16 @@ Ex → "5" for level 5
         <input
         type="text"
         placeholder="Type in a CSS selector"
-        id="css-input">
+        class="css-input">
         </input>
         <button
-          id="enter-button">
+          class="enter-button">
           enter
         </button>
         <ul class="text-editor-lines">
           <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li>
         </ul>
-        <textarea readonly id="html-viewer"></textarea>
+        <textarea readonly class="html-viewer"></textarea>
         </section>
       </section>
     </main>

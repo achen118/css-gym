@@ -1,11 +1,11 @@
-#editor-headers {
+.editor-headers {
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
 }
 
-#editors-container {
+.editors-container {
   background-color: #A8A8A8;
   margin: 0 auto;
   border: 10px solid #1C1F1E;
@@ -27,20 +27,20 @@
   font-weight: bold;
 }
 
-#editors {
+.editors {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-#css-editor, #html-viewer {
+.css-editor, .html-viewer {
   width: 350px;
   box-sizing: border-box;
   border: 1px solid #3A3A3B;
 }
 
-#css-editor, #html-viewer, .text-editor-lines {
+.css-editor, .html-viewer, .text-editor-lines {
   height: 356px;
 }
 
@@ -60,7 +60,7 @@
   background-color: #DDDDDD;
 }
 
-#css-input {
+.css-input {
   position: absolute;
   top: 7px;
   left: 35px;
@@ -72,7 +72,7 @@
   background-color: #7FE1A1;
 }
 
-#enter-button {
+.enter-button {
   position: absolute;
   padding: 2px 5px;
   color: #666666;
@@ -84,7 +84,7 @@
   left: 43%;
 }
 
-#css-editor textarea {
+.css-editor textarea {
   width: 100%;
   height: 100%;
   padding: 23px 5px 5px 5px;
@@ -93,33 +93,10 @@
   background-color: #EFEFEF;
 }
 
-#html-viewer {
+.html-viewer {
   padding: 6px 5px 5px 5px;
   line-height: 1.6em;
   box-sizing: border-box;
   background-color: #3A3A3B;
   color: #40BC6C;
-}
-
-.shadow {
-	position: relative;
-}
-
-.shadow::before,
-.shadow::after {
-	background-color: rgba(0,0,0,0.5); /* Color */
-	width: 100px; height: 100px; /* Depth */
-	position: absolute;
-	content: ""; z-index: 0;
-	transform-origin: top right;
-}
-.shadow::before {
-	height: 100%; right: 100%;
-	transform: skewY(-45deg);
-	background: linear-gradient(to left, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
-}
-.shadow::after {
-	width: 100%; top: 100%;
-	transform: skewX(-45deg);
-	background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
 }

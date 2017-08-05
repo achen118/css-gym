@@ -3,6 +3,7 @@
   height: 190px;
   background: url('https://res.cloudinary.com/malice/image/upload/v1501649999/bench_umaiut.png') no-repeat center center;
   background-size: 600px;
+  margin-top: 100px;
 }
 
 dumbbell {
@@ -21,8 +22,16 @@ dumbbell {
   background-size: 166px;
 }
 
-.gym-bench dumbbell:first-of-type {
+dumbbell:first-of-type {
   left: 25%;
+}
+
+dumbbell:first-of-type.move-left {
+  left: 20%;
+}
+
+dumbbell:last-of-type.move-left {
+  right: 33%;
 }
 
 #orange {
@@ -31,7 +40,7 @@ dumbbell {
 }
 
 #orange:hover {
-  
+
 }
 
 .small {
@@ -41,4 +50,28 @@ dumbbell {
 
 .small:hover {
   background-size: 120px;
+}
+
+kettlebell {
+  background: url('https://res.cloudinary.com/malice/image/upload/v1501898842/kettlebells_ri14jr.png') no-repeat center center;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 120px;
+  right: 25%;
+  cursor: pointer;
+}
+
+kettlebell:first-of-type {
+  left: 38%;
+}
+
+kettlebell:last-of-type {
+  right: 15%;
+}
+
+step {
+  background: url('https://res.cloudinary.com/malice/image/upload/v1501898607/step_yae774.png') no-repeat center center;
+  background-size: 200px;
 }

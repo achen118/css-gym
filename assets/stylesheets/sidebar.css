@@ -10,7 +10,7 @@
   cursor: default;
 }
 
-#sidebar {
+.sidebar {
   width: 20%;
   height: 100%;
   box-sizing: border-box;
@@ -22,11 +22,11 @@ h1 {
   font-size: 28px;
 }
 
-#sidebar-header {
+.sidebar-header {
   position: relative;
 }
 
-#sidebar-header, #level-nav {
+.sidebar-header, .level-nav {
   padding: 15px;
   background-color: #40bc6c;
   font-family: 'Bungee', cursive;
@@ -34,31 +34,31 @@ h1 {
   flex-wrap: wrap;
 }
 
-#sidebar-header {
+.sidebar-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#level-nav {
+.level-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#level {
+.level {
   font-size: 20px;
   font-weight: bold;
 }
 
-#level-arrows {
+.level-arrows {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-#level-description {
+.level-description {
   padding: 15px;
 }
 
