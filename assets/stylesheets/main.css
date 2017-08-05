@@ -6,7 +6,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   font-size: 11px;
-  font-family: sans-serif;
+  font-family: 'Convergence', sans-serif;
   color: #1C1F1E;
   position: relative;
 }
@@ -17,17 +17,6 @@ a, button {
 
 i {
   font-style: italic;
-}
-
-h4 {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-h5 {
-  font-weight: bold;
-  font-size: 16px;
-  text-transform: uppercase;
 }
 
 input:focus, button:focus {
