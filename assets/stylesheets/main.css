@@ -131,10 +131,10 @@ mark {
 .fa-github, .fa-linkedin-square {
   color: #1C1F1E;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
 }
 
 .fa-github {
-  margin-right: 50px;
+  margin-right: 40px;
 }
