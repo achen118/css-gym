@@ -4,6 +4,7 @@
   background: url('https://res.cloudinary.com/malice/image/upload/v1501649999/bench_umaiut.png') no-repeat center center;
   background-size: 600px;
   margin-top: 130px;
+  position: relative;
 }
 
 dumbbell {
@@ -13,8 +14,8 @@ dumbbell {
   background-size: 140px;
   cursor: pointer;
   position: absolute;
-  top: 195px;
-  right: 25%;
+  top: -35px;
+  right: 20%;
 }
 
 /*.dumbell-hover:hover {
@@ -23,11 +24,11 @@ dumbbell {
 }*/
 
 dumbbell:first-of-type {
-  left: 25%;
+  left: 20%;
 }
 
 dumbbell:first-of-type.move-left {
-  left: 20%;
+  left: 15%;
 }
 
 dumbbell:last-of-type.move-left {
@@ -47,7 +48,7 @@ dumbbell:last-of-type.move-left {
   width: 100px;
   height: 49px;
   background-size: 100px;
-  top: 215px;
+  top: -15px;
 }
 
 /*.small:hover {
@@ -60,17 +61,17 @@ kettlebell {
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 185px;
-  right: 25%;
+  top: -48px;
+  right: 23%;
   cursor: pointer;
 }
 
 kettlebell:first-of-type {
-  left: 36%;
+  left: 32%;
 }
 
 kettlebell:last-of-type {
-  right: 15%;
+  right: 10%;
 }
 
 step {
@@ -79,8 +80,8 @@ step {
   width: 100px;
   height: 30px;
   position: absolute;
-  top: 230px;
-  right: 20%;
+  top: 3px;
+  right: 17%;
   cursor: pointer;
 }
 

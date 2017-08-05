@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: 11px;
+  font-size: 12px;
   font-family: sans-serif;
   color: #1C1F1E;
   position: relative;
@@ -76,15 +76,15 @@ body code {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 0 auto;
   position: relative;
+  overflow: auto;
+  width: 80%;
 }
 
 .selector-display {
   margin: 0 auto;
   padding-top: 100px;
   text-align: center;
-  overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,7 +99,7 @@ body code {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 80%;
 }
 
 .selector-title {
@@ -111,8 +111,26 @@ body code {
   top: 30px;
 }
 
+.winner {
+  visibility: hidden;
+  position: absolute;
+  width: 450px;
+  height: 70px;
+  font-size: 28px;
+  font-family: 'Bungee', cursive;
+  top: 20%;
+}
+
 .visible {
   visibility: visible;
+}
+
+.winner.visible {
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 mark {
