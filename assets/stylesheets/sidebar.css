@@ -12,12 +12,16 @@
 
 .sidebar {
   width: 20%;
-  height: 100%;
+  min-height: 100vh;
   background-color: #FAFAFA;
   border-left: 5px solid #40bc6c;
   border-right: 5px solid #40bc6c;
   border-bottom: 5px solid #40bc6c;
-  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 h1 {
@@ -36,16 +40,14 @@ h5 {
   text-transform: uppercase;
 }
 
-.sidebar-header {
-  position: relative;
-}
-
 .sidebar-header, .level-nav {
   padding: 15px;
   background-color: #40bc6c;
   font-family: 'Bungee', cursive;
   letter-spacing: 2px;
   flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .sidebar-header {
@@ -79,32 +81,50 @@ h5 {
 
 .level-dropdown {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   display: none;
-  top: 70px;
+  top: 65px;
   right: -5px;
+  width: 100%;
+  height: 100%;
   font-size: 18px;
-  background-color: #40BC6C;
+  background-color: #1C1F1E;
+  color: #40BC6C;
+  border: 5px solid #1C1F1E;
 }
 
 .show {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.level-dropdown.show {
+  -webkit-animation: fadein .4s;
+  -moz-animation: fadein .4s;
+  -ms-animation: fadein .4s;
+  -o-animation: fadein .4s;
+  animation: fadein .4s;
 }
 
 .level-dropdown li {
-  padding: 20px 30px;
-  border-bottom: 1px solid #A8A8A8;
-  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 1px solid #1C1F1E;
   cursor: pointer;
+  box-sizing: border-box;
+  font-family: 'Bungee', cursive;
 }
 
 .level-dropdown li:last-of-type {
   border: none;
+  box-sizing: border-box;
 }
 
 .level-dropdown li:hover {
-  background-color: #A8A8A8;
+  background-color: #40BC6C;
+  color: #1C1F1E;
+  outline: 5px solid #1C1F1E;
+  box-sizing: border-box;
 }
