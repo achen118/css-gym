@@ -92,3 +92,11 @@
     from { opacity: 1; }
     to   { opacity: 0; }
 }
+
+.fadein {
+  -webkit-animation: fadein .8s;
+  -moz-animation: fadein .8s;
+  -ms-animation: fadein .8s;
+  -o-animation: fadein .8s;
+  animation: fadein .8s;
+}

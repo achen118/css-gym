@@ -100,6 +100,20 @@ body code {
   top: 30px;
 }
 
+.selector-title::before {
+  content: url('https://res.cloudinary.com/malice/image/upload/c_scale,w_70/v1501921806/barbell-left_yyy1ya.png');
+  position: absolute;
+  left: -80px;
+  top: 0;
+}
+
+.selector-title::after {
+  content: url('https://res.cloudinary.com/malice/image/upload/c_scale,w_70/v1501922074/barbell-right_dws2r8.png');
+  position: absolute;
+  right: -80px;
+  top: 0;
+}
+
 .winner {
   visibility: hidden;
   position: absolute;
@@ -123,9 +137,9 @@ body code {
 }
 
 mark {
-  /*background-color: #40BC6C;*/
-  background-color: transparent;
+  background-color: #40BC6C;
   padding: 10px 30px;
+  border-radius: 7px;
   visibility: hidden;
   position: absolute;
   z-index: 1000;
@@ -140,20 +154,6 @@ mark.visible {
   -ms-animation: fadein .7s;
   -o-animation: fadein .7s;
   animation: fadein .7s;
-}
-
-mark::before {
-  content: url('https://res.cloudinary.com/malice/image/upload/c_scale,w_20/v1501922690/barbell-left_kpslry.png');
-  position: absolute;
-  top: 6px;
-  left: 7px;
-}
-
-mark::after {
-  content: url('https://res.cloudinary.com/malice/image/upload/c_scale,w_20/v1501922690/barbell-right_olhegk.png');
-  position: absolute;
-  top: 6px;
-  right: 7px;
 }
 
 .fa-github, .fa-linkedin-square {
