@@ -14,7 +14,7 @@ Each level will have the following:
 - [ ] Selector Display elements on hover will highlight the corresponding HTML code in the HTML viewer
 - [ ] If the element(s) is/are successfully selected by the user, they will animate and fly off screen, page will render the next level
 
-![Screenshot](http://res.cloudinary.com/malice/image/upload/c_scale,w_800/v1503532237/AwesomeScreenshot-2017-08-23T23-46-37-067Z_vibo4k.gif)
+![Screenshot](http://res.cloudinary.com/malice/image/upload/v1503532237/AwesomeScreenshot-2017-08-23T23-46-37-067Z_vibo4k.gif)
 
 ### Future Directions for the Project
 
