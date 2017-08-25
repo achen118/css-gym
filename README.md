@@ -18,3 +18,5 @@ In addition to the features already implemented in CSS Gym, outlined below are t
 
 ### Additional Levels & Gym Equipment
 ### More Detailed Hints
+
+Currently, CSS Gym provides hints as you hover over specific gym equipment. These hints display the current CSS selector of the gym item that is being moused over. As I continue to work on CSS Gym, I plan to implement more detailed hints, most likely as pop-up modals, that will be available if a user needs additional help to pass a level.
