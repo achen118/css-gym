@@ -1,7 +1,7 @@
 # CSS Gym - Exercise Your Knowledge of CSS Selectors
 [CSS Gym live](https://achen118.github.io/css-gym/)
 
-CSS Gym is a CSS tutorial inspired by CSS Diner. Consisting of 5 levels, each level will provide a lesson on how to use specific CSS selectors. Inputting the correct CSS selector into the CSS Editor will advance you to the next level.
+CSS Gym is a CSS tutorial inspired by CSS Diner. Consisting of 5 levels, each level provides a lesson on how to use basic CSS selectors. Inputting the correct CSS selector into the CSS Editor will advance you to the next level.
 
 ## Features & Implementation
 
@@ -10,6 +10,17 @@ CSS Gym is a CSS tutorial inspired by CSS Diner. Consisting of 5 levels, each le
 ### Gym Equipment
 ### CSS & HTML Editors
 ### Levels
+
+Level 1: Type Selectors
+
+Level 2: ID Selectors
+
+Level 3: Class Selectors
+
+Level 4: Adjacent Sibling Selectors
+
+Level 5: Child Selectors
+
 ### Sidebar
 
 ## Future Directions for the Project
