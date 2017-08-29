@@ -18,11 +18,6 @@ dumbbell {
   right: 20%;
 }
 
-/*.dumbell-hover:hover {
-  background: url('https://res.cloudinary.com/malice/image/upload/v1501614674/dumbell-hover_xx1elr.png') no-repeat center center;
-  background-size: 166px;
-}*/
-
 dumbbell:first-of-type {
   left: 20%;
 }
@@ -50,10 +45,6 @@ dumbbell:last-of-type.move-left {
   background-size: 100px;
   top: -15px;
 }
-
-/*.small:hover {
-  background-size: 120px;
-}*/
 
 kettlebell {
   background: url('https://res.cloudinary.com/malice/image/upload/v1501898842/kettlebells_ri14jr.png') no-repeat center center;
