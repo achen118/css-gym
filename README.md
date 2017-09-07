@@ -15,15 +15,15 @@ CSS Gym is a CSS tutorial inspired by CSS Diner. Consisting of 5 levels, each le
 
 ### Levels
 
-- **Level 1: Type Selectors - Select the dumbbells**
+- Level 1: Type Selectors - Select the dumbbells
 
-- **Level 2: ID Selectors - Select the orange dumbbell**
+- Level 2: ID Selectors - Select the orange dumbbell
 
-- **Level 3: Class Selectors - Select the small dumbbell**
+- Level 3: Class Selectors - Select the small dumbbell
 
-- **Level 4: Adjacent Sibling Selectors - Select every kettlebell that's next to a dumbbell**
+- Level 4: Adjacent Sibling Selectors - Select every kettlebell that's next to a dumbbell
 
-- **Level 5: Child Selectors - Select the kettlebell directly on a step**
+- Level 5: Child Selectors - Select the kettlebell directly on a step
 
 ### Navigation Between Levels
 
