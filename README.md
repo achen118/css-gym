@@ -3,6 +3,12 @@
 
 CSS Gym is a CSS tutorial inspired by CSS Diner. Consisting of 5 levels, each level provides a lesson on how to use basic CSS selectors. Inputting the correct CSS selector into the CSS Editor will advance you to the next level.
 
+## Technologies Used
+- [ ] Vanilla JavaScript
+- [ ] HTML
+- [ ] CSS
+- [ ] Webpack
+
 ## Features & Implementation
 
 ![Screenshot](http://res.cloudinary.com/malice/image/upload/v1503532237/AwesomeScreenshot-2017-08-23T23-46-37-067Z_vibo4k.gif)
