@@ -13,6 +13,8 @@ CSS Gym is a CSS tutorial inspired by CSS Diner. Consisting of 5 levels, each le
 
 ## Features
 
+### Sidebar
+
 ### Levels
 
 - Level 1: Type Selectors - Select the dumbbells
@@ -33,8 +35,6 @@ CSS Gym is a CSS tutorial inspired by CSS Diner. Consisting of 5 levels, each le
 - Inputting a valid level number into the CSS Editor will allow you to skip between levels
 - Opening the hamburger menu in the sidebar will allow you to select a specific level to jump to
 - Clicking the arrow icons in the sidebar will take you through the different levels (arrow icon will be disabled when there are no more levels in that direction)
-
-### Sidebar
 
 ## Implementation
 
