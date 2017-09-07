@@ -11,7 +11,7 @@ CSS Gym is a CSS tutorial inspired by CSS Diner. Consisting of 5 levels, each le
 - [ ] CSS
 - [ ] Webpack
 
-## Features & Implementation
+## Features
 
 ### Levels
 
@@ -35,6 +35,75 @@ CSS Gym is a CSS tutorial inspired by CSS Diner. Consisting of 5 levels, each le
 - Clicking the arrow icons in the sidebar will take you through the different levels (arrow icon will be disabled when there are no more levels in that direction)
 
 ### Sidebar
+
+## Implementation
+
+### Checking User Input
+
+```javascript
+// On enter keypress:
+userInput.addEventListener("keypress", event => {
+  document.querySelector('.selector-title').classList.remove('fadein');
+  enterButton.classList.remove('pressEnter');
+  editors.classList.remove('shake');
+  if (event.keyCode === 13) {
+    enterButton.classList.add('pressEnter');
+    if (isLevelNumber(userInput.value)) {
+      level.goToLevel(parseInt(userInput.value));
+      currentLevel = level.level;
+      currentSelector = level.currentSelector;
+    } else {
+      checkSelector(userInput.value);
+    }
+    userInput.value = "";
+  }
+});
+
+// Checks to see if the user input is the correct CSS selector for the current level
+// If correct, user is sent to the next level
+// If incorrect, shake animation is applied
+const checkSelector = input => {
+  document.querySelector('.selector-title').classList.remove('fadein');
+  if (input === currentSelector) {
+    if (currentLevel === 5) {
+      const gymBench = document.querySelector('.gym-bench');
+      Array.from(gymBench.children).forEach(el => el.classList.add('correct'));
+      document.querySelector('.winner').classList.add('visible');
+    } else {
+      document.querySelectorAll(currentSelector).forEach(el => el.classList.add('correct'));
+      setTimeout(() => {
+        currentLevel += 1;
+        level.goToLevel(currentLevel);
+        currentSelector = level.currentSelector;
+      }, 500);
+    }
+  } else {
+    document.querySelector('.editors-container').classList.add('shake');
+  }
+};
+
+// Checks to see if a level number was inputted into the CSS Editor
+const isLevelNumber = input => {
+  const levelInt = parseInt(input);
+  if (levelInt >= 1 && levelInt <= 5) {
+    return true;
+  }
+};
+```
+
+### Level Specific DOM Manipulation
+
+```javascript
+// HTML is injected depending on the current level number
+if (levelNo === 1) {
+    this.currentSelector = "dumbbell";
+    this.level = 1;
+    selectorInstruction.innerHTML = "Select the<br />dumbbells";
+    levelDescription.innerHTML = "<h4>BASIC SELECTORS:<br /><br />Type Selectors</h4><br />This basic selector chooses all elements that match the given <i>name</i>.<br /><br /><h5>Syntax</h5><br /><code>element { style properties }</code><br /><h5>CSS</h5><br /><code>span {<br />  background-color: DodgerBlue;<br />  color: #ffffff;<br />}</code><br /><h5>Result</h5><br /><code><span1>Here's a span with some text.</span1><p>Here's a p with some text.</p><span1>Here's a span with more text.</span1></code>";
+    gymBench.innerHTML = "\n  <dumbbell></dumbbell>\n  <dumbbell></dumbbell>\n";
+    levelHTML.innerHTML = document.querySelector('.gym-bench').outerHTML;
+}
+```
 
 ## Future Directions for the Project
 
